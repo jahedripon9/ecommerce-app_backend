@@ -9,7 +9,7 @@ const connectDB = async () => {
     // mongoose.connection.on('connected', () => { console.log("DB Connected"); })
     // যখন ডাটাবেজের সাথে সংযোগ সফলভাবে স্থাপন হবে, তখন কনসোলে "DB Connected" মেসেজ দেখাবে।
 
-    await mongoose.connect(`${process.env.MONGODB_URI}/e-commerce`)
+    await mongoose.connect(`${process.env.MONGO_URI}/e-commerce`)
 }
 // এটি ডাটাবেজের সাথে সংযোগ করার মূল অংশ।
 // process.env.MONGODB_URL থেকে MongoDB এর ঠিকানা নেওয়া হচ্ছে (সাধারণত .env ফাইল থেকে আসে)।
